@@ -485,6 +485,7 @@ function generateQuizList(totalQuestions, answersPerQuestion, hard=false) {
                     .concat(preguntes[randomQuestionPosition].resp, fillingAnswers.slice(randomPosition)), 
             answer: randomPosition 
         }); 
+        usedQuestions.push(randomQuestionPosition);
     } 
 
     return generatedQuiz;
