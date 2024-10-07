@@ -854,6 +854,210 @@ const quiz_tema_2 = [
     
 ];
 
+const quiz_tema_3 = [
+
+    {question: "Qui tria el defensor del poble europeu?",
+    choices: ["El Consell Europeu", "El Tribunal de Justícia", "El Parlament Europeu", "La Comissió Europea"],
+    answer: 2},
+    
+    {question: "Quin any es va crear el Consell Europeu?",
+    choices: ["El 1986", "El 1974", "El 1955", "El 1925"],
+    answer: 1},
+    
+    {question: "Quina de les següents no és una institució de la Unió Europea?",
+    choices: ["El Parlament Europeu", "El Comitè Europeu de Protecció de Dades", "El Consell Europeu", "La Comissió Europea"],
+    answer: 1},
+    
+    {question: "On té la seu el Parlament Europeu?",
+    choices: ["A París", "A Roma", "A Barcelona", "A Estrasburg"],
+    answer: 3},
+    
+    {question: "Quan es va signar el Tractat de Roma?",
+    choices: ["El 2 de setembre del 2009", "El 25 de març de 1957", "El 8 de maig de 1965", "L’1 de juliol de 1935"],
+    answer: 1},
+    
+    {question: "El Tractat de la Unió Europea es va signar a Maastricht:",
+    choices: ["El 25 de juny de 1979", "El 16 de març de 1993", "El 17 d'octubre de 1971", "El 7 de febrer de 1992"],
+    answer: 3},
+    
+    {question: "Durant quins mesos el Consell duu a terme les reunions a Luxemburg?",
+    choices: ["Abril, juny i octubre", "Gener, febrer i març", "El Consell es reuneix quan el convoca el president", "Juny, juliol i agost"],
+    answer: 0},
+    
+    {question: "Senyalau la resposta correcta en relació amb el Tribunal de Justícia de la Unió Europea:",
+    choices: ["Interpreta el dret dels estats membres", "Aplica i interpreta el dret comunitari", "Interpreta, però no aplica el dret comunitari", "Aplica el dret comunitari en col·laboració amb els ministres d'assumptes exteriors de cada país membre"],
+    answer: 1},
+    
+    {question: "És correcte afirmar que les directives de la Unió Europea:",
+    choices: ["Tenen un abast general. Són obligatòries en tots els seus elements i directament aplicables a cada estat membre", "Obliguen l'estat membre destinatari quant al resultat que s'hagi d'aconseguir, i deixen, tanmateix, a les autoritats nacionals l'elecció de la forma i dels mitjans", "No són vinculants i cada estat membre pot incorporar-les al seu ordenament jurídic", "Són dret comunitari primari i no vinculant"],
+    answer: 1},
+    
+    {question: "El Tractat de París que crea la Comunitat Europea del Carbó i l'Acer va entrar en vigor:",
+    choices: ["El 17 d'octubre de 1958", "El 13 de gener de 1981", "El 23 de juliol de 1952", "El 5 de setembre de 1962"],
+    answer: 2},
+    
+    {question: "La Comissió Europea té la seu a Brussel·les, però alguns depertament i agències executives d'aquesta Comissió es troben a:",
+    choices: ["París", "Berlín", "Luxemburg", "Niça"],
+    answer: 2},
+    
+    {question: "El Consell Europeu està format per:",
+    choices: ["Únicament pels caps d'estat o de govern dels estats membres de la Unió Europea", "Els caps d’estat o de govern dels estats membres de la Unió Europea i el president del Parlament Europeu", "Els caps d’estat o de govern dels estats membres de la Unió Europea, el president del Consell Europeu i el president del Parlament Europeu", "Els caps d’Estat o de govern dels estats membres de la Unió Europea, el president del Consell Europeu i el president de la Comissió Europea"],
+    answer: 3},
+    
+    {question: "L'instrument normatiu que es dirigeix exclusivament als estats membres de la Unió Europea i els obliga a dur a terme una actuació positiva denominada transposició s'anomena:",
+    choices: ["Reglament", "Llei", "Decisió", "Directiva"],
+    answer: 3},
+    
+    {question: "El 18 d'abril de 1951 es va signar a París el Tractat constitutiu de la Unió Europea del Carbó i de l'Acer; quins països varen signar aquest Tractat?",
+    choices: ["Alemanya occidental, Bèlgica, França, Itàlia, Luxemburg i els Països Baixos", "Alemanya occidental, Bèlgica, França, Itàlia, Gran Bretanya i els Països Baixos", "Alemanya occidental, França, Gran Bretanya, Itàlia, Luxemburg i els Països Baixos", "Alemanya occidental, Dinamarca, França, Itàlia, Luxemburg i els Països Baixos"],
+    answer: 0},
+    
+    {question: "Els reglaments europeus es caracteritzen:",
+    choices: ["Pel caràcter no obligatori, l'abast individual i l'aplicabilitat directa", "Pel caràcter no obligatori, l'abast individual i l'aplicació indirecta", "Pel caràcter no vinculant, l'abast general i la no aplicabilitat directa", "Pel caràcter obligatori, l’abast general i l’aplicació directa"],
+    answer: 3},
+    
+    {question: "La Mesa del Parlament Europeu estarà composta:",
+    choices: ["Pel president, dotze vicepresidents i els qüestors", "Pel president, deu vicepresidents i els qüestors", "Pel president, dos vicepresidents i els qüestors", "Pel president, catorze vicepresidents i els qüestors"],
+    answer: 3},
+    
+    {question: "On es va signar l'Acta Única Europea?",
+    choices: ["A Berlín", "A Luxemburg", "A Estrasburg", "A Munic"],
+    answer: 1},
+    
+    {question: "Els drets, les llibertats i els principis reconeguts a la Unió Europea estan enunciats:",
+    choices: ["En el Tractat de Tallinn", "No estan reconeguts avui dia", "En les constitucions dels països membres", "En la Carta dels Drets Fonamentals de la Unió Europea"],
+    answer: 3},
+    
+    {question: "Quin organisme de la Unió Europea elabora l’avantprojecte del pressupost?",
+    choices: ["El defensor del poble europeu", "El Consell Europeu", "La Comissió Europea", "El Parlament Europeu"],
+    answer: 2},
+    
+    {question: "Quin és el principal òrgan fiscalitzador dels comptes de la Unió Europea?",
+    choices: ["La Comissió", "El Parlament Europeu", "El Tribunal de Comptes", "El Banc Central Europeu"],
+    answer: 2},
+    
+    {question: "Els actes legislatius es poden adoptar únicament a proposta de:",
+    choices: ["La Comissió Europea", "El Consell Europeu", "El Consell d’Europa", "El Consell de la Unió Europea"],
+    answer: 0},
+    
+    {question: "El president de la Comissió Europea és elegit:",
+    choices: ["Pel Parlament", "Pel Consell de la Unió", "Pel Consell d'Europa", "Pel Tribunal Superior de Justícia"],
+    answer: 0},
+    
+    {question: "El mandat dels parlamentaris europeus és de:",
+    choices: ["Deu anys", "Dos anys", "Cinc anys", "Quinze anys"],
+    answer: 2},
+    
+    {question: "El defensor del poble presentarà al Parlament Europeu un informe sobre el resultat de les seves investigacions:",
+    choices: ["Semestralment", "Setmanalment", "Mensualment", "Anualment"],
+    answer: 3},
+    
+    {question: "Les decisions de la Comissió s'adopten per:",
+    choices: ["Consens de tres quartes parts dels membres", "Majoria dels seus membres", "Unanimitat", "Majoria de dos terços"],
+    answer: 1},
+    
+    {question: "Quin any es va adherir Espanya a la Comunitat Europea?",
+    choices: ["El 2001", "El 1950", "El 1986", "El 1991"],
+    answer: 2},
+    
+    {question: "Quants vicepresidents assisteixen el president del Parlament Europeu?",
+    choices: ["Vint-i-set", "Un", "Catorze", "Set"],
+    answer: 2},
+    
+    {question: "El Consell Europeu es reuneix:",
+    choices: ["Tres cops l'any", "Dues vegades cada any", "Un cop per trimestre", "Dues vegades per semestre"],
+    answer: 3},
+    
+    {question: "Quin és el màxim òrgan polític de la Unió Europea?",
+    choices: ["El Tribunal de Justícia", "El Defensor del Poble", "La Comissió Europea", "El Consell de la Unió Europea"],
+    answer: 3},
+    
+    {question: "Quantes sessions plenàries com a mínim duu a terme el Parlament Europeu?",
+    choices: ["Una a l'any", "Una al mes", "Una a la setmana", "Una al dia"],
+    answer: 1},
+    
+    {question: "En relació amb la legislació de la Unió Europea, són instruments jurídics vinculants:",
+    choices: ["El reglament, la directiva i la decisió", "El reglament, la recomanació i el dictamen", "La directiva, el dictamen i la decisió", "La directiva, el reglament i la recomanació"],
+    answer: 0},
+    
+    {question: "Quina de les institucions següents es va crear per iniciativa del Tractat de la Unió Europea?",
+    choices: ["El Comitè de les Regions", "El Defensor del Poble Europeu", "La Interpol", "El Banc Central Europeu"],
+    answer: 0},
+    
+    {question: "El Parlament Europeu estarà compost per representants dels ciutadans de la Unió, amb un nombre de:",
+    choices: ["305 més el president", "705, inclòs el president", "375 diputats", "Entre 457 i 528 diputats"],
+    answer: 1},
+    
+    {question: "La renovació parcial dels jutges i advocats generals del Tribunal de Justícia Europeu té lloc cada:",
+    choices: ["Tres anys", "Dos anys", "Deu anys", "Set anys"],
+    answer: 0},
+    
+    {question: "Qui administra els crèdits comunitaris del Fons Social Europeu?",
+    choices: ["El Tribunal de Comptes", "La Comissió", "La Intervenció General", "El Defensor del Poble"],
+    answer: 1},
+    
+    {question: "El Parlament Europeu pot constituir una comissió temporal de recerca a petició:",
+    choices: ["D’una desena part dels diputats", "D’una quarta part dels diputats", "D’una cinquena part dels diputats", "De la unanimitat dels diputats"],
+    answer: 2},
+    
+    {question: "Qui presideix el Consell d'Afers Estrangers de la Unió Europea?",
+    choices: ["L'alt representant de la Unió per a Assumptes Exteriors i Política de Seguretat", "Un ministre d’assumptes exteriors d’un país membre", "El president del Parlament", "El president de la Comissió"],
+    answer: 0},
+    
+    {question: "Quin dels següents actes normatius de la Unió Europea és obligatori en tots els seus elements:",
+    choices: ["La decisió", "El dictamen", "La recomanació", "La instrucció"],
+    answer: 0},
+    
+    {question: "Quin dels països següents no forma part de la Unió Europea?",
+    choices: ["Espanya", "França", "Noruega", "Finlàndia"],
+    answer: 2},
+    
+    {question: "Quants escons corresponen a Espanya en el Parlament Europeu actualment?",
+    choices: ["54", "59", "75", "45"],
+    answer: 1},
+    
+    {question: "D'acord amb el que preveu el Tractat Constitutiu de la Unió Europea, com s'anomena la institució europea en què estan representats els ciutadans dels estats membres?:",
+    choices: ["Comissió", "Parlament", "Tribunal Europeu", "Consell Europeu"],
+    answer: 1},
+    
+    {question: "En quants pilars es basa el Tractat de la Unió Europea?",
+    choices: ["Tres", "Vuit", "Quinze", "Vint-i-set"],
+    answer: 0},
+    
+    {question: "Indicau la resposta correcta respecte del defensor del poble europeu:",
+    choices: ["El seu mandat és de cinc anys", "És elegit per la Comissió", "Només els jutges poden recórrer al defensor del poble europeu", "No pot ser remogut de les funcions en cap cas"],
+    answer: 0},
+    
+    {question: "El ple del Parlament Europeu adopta els acords:",
+    choices: ["Per majoria simple", "Per majoria dels vots emesos excepte que hi hagi una disposició en contra", "Per majoria de tres cinquenes parts", "Per unanimitat"],
+    answer: 0},
+    
+    {question: "Segons el Tractat de Lisboa, quants diputats com a màxim pot tenir un estat membre?",
+    choices: ["27", "96", "15", "150"],
+    answer: 1},
+    
+    {question: "La seu del Parlament Europeu és a:",
+    choices: ["Estrasburg", "Brussel·les", "París", "Roma"],
+    answer: 0},
+    
+    {question: "El mandat de la Comissió Europea s'estableix per un període de:",
+    choices: ["Vuit anys", "Sis anys", "Quatre anys", "Cinc anys"],
+    answer: 3},
+    
+    {question: "Amb quina freqüència es reuneix de manera ordinària el Consell Europeu?",
+    choices: ["Un cop l'any", "Un cop al mes", "Dues vegades per semestre", "Dues vegades cada any"],
+    answer: 2},
+    
+    {question: "Al Parlament Europeu els diputats s'agrupen per:",
+    choices: ["Països", "Regions", "Idioma", "Ideologia política"],
+    answer: 3},
+    
+    {question: "La institució de la Unió Europea que està composta per un ministre de cada estat membre de la Unió Europea és:",
+    choices: ["El Comitè de les Regions", "El Parlament Europeu", "La Comissió Europea", "El Consell"],
+    answer: 3}
+    
+]
+
 
  
 function getRandomAnswers(numAnswers, forbiddenAnswer, hard=false) { 
@@ -934,6 +1138,8 @@ var hardquestions=generateQuizList(10,4, true);
 var tema1questions=subQuizFromBiggerQuiz(quiz_tema_1, 10);
 
 var tema2questions=subQuizFromBiggerQuiz(quiz_tema_2, 10);
+
+var tema3questions=subQuizFromBiggerQuiz(quiz_tema_3, 10);
 
 
 
