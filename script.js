@@ -988,7 +988,7 @@ document.querySelector(".submit-answer").addEventListener("click",function(){
            
     }else{
     
-        score-=0.5;
+        score-=0.33;
         document.getElementById("score").textContent="Nota : "+score;
         document.getElementById("ques-view").innerHTML+="<div class='ques-circle incorrect'>"+(countQues+1)+"</div>";
     };
