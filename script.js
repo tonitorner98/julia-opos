@@ -1701,7 +1701,7 @@ document.getElementById("restart").addEventListener("click",function(){
 });
 
 document.getElementById("about").addEventListener("click",function(){
-    alert("No hi ha info. A etudiar!");
+    alert("La selecció de temari és múltiple. Si es selecciona més d'una opció, es generarà un test amb preguntes aleatòries de tots els temes seleccionats. A etudiar!");
 
 });
 
