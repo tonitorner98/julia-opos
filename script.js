@@ -1512,6 +1512,8 @@ function generateQuizList(totalQuestions, answersPerQuestion, hard=false) {
 }
 
 function subQuizFromBiggerQuiz(biggerQuiz, subsetSize) {
+    if (biggerQuiz.length < subsetSize) return;
+
     //Simply return a subset of the array conserving the format
     let generatedQuiz = [];
     let usedQuestions = [];
@@ -1525,6 +1527,7 @@ function subQuizFromBiggerQuiz(biggerQuiz, subsetSize) {
     }
     return generatedQuiz;
 }
+
 
 
 /*----------------------------------------------*/
@@ -1570,16 +1573,52 @@ document.querySelector(".final-result").style.display="none";
 
 //REUTILITZAR L'ANTIC SELECTOR DE LLENGUATGES?
 
-document.querySelector(".choose-lang").addEventListener("click",function(){
+document.querySelector("#startQuizbutton").addEventListener("click",function(){
 
-    lang=document.getElementById("language").value+"questions";
+    //lang=document.getElementById("language").value+"questions";
+    var checkboxes = document.querySelectorAll('input[type=checkbox]:checked');
+    if (checkboxes.length < 1) {
+        alert("Convendria seleccionar almenys un tema, no? Desde luego... \u{1F61C} \u{1F61C}");
+        return;
+    }
+    var joinedQuestions = [];
+
+    for (var t = 0; t < checkboxes.length; t++) {
+        switch (checkboxes[t].value) {
+            case "articles":
+                joinedQuestions = joinedQuestions.concat(generateQuizList(preguntes, 4));
+                break;
+            case "tema1":
+                joinedQuestions = joinedQuestions.concat(quiz_tema_1);
+                break;
+            case "tema2":
+                joinedQuestions = joinedQuestions.concat(quiz_tema_2);
+                break;
+            case "tema3":
+                joinedQuestions = joinedQuestions.concat(quiz_tema_3);
+                break;
+            case "tema4":
+                joinedQuestions = joinedQuestions.concat(quiz_tema_4);
+                break;
+            case "tema5":
+                joinedQuestions = joinedQuestions.concat(quiz_tema_5);
+                break;
+        }
+    }
+
+
+    finalQuiz = subQuizFromBiggerQuiz(joinedQuestions, document.querySelectorAll("input[type=radio]:checked")[0].value);
+    //alert(finalQuiz[0]);
+
+    //Fer guapo, està així per fer proves
+    lang = "finalQuiz";
     document.getElementById("ques-left").textContent="Pregunta : "+(countQues+1)+"/"+window[lang].length;
 
     //alert(window[lang].length);
     //window["anything"] will convert "anything" string to object because window is also an object
     document.querySelector(".quiz").style.display="block";
     
-    document.querySelector(".question").innerHTML="<h1>"+window[lang][countQues].question+"</h1>";
+    document.querySelector(".question").innerHTML="<h1 id=\"enunciat\">"+window[lang][countQues].question+"</h1>";
      for (i=0;i<=3;i++){                     
         document.getElementById("opt"+i).value=window[lang][countQues].choices[i];
         document.getElementById("lb"+i).innerHTML=window[lang][countQues].choices[i];
@@ -1601,13 +1640,13 @@ document.querySelector(".submit-answer").addEventListener("click",function(){
     if(document.querySelector('input[name="options"]:checked').value===window[lang][countQues].choices[window[lang][countQues].answer]){
            
         score+=1;
-        document.getElementById("score").textContent="Nota : "+score;
+        document.getElementById("score").textContent="Nota : "+score.toFixed(2);
         document.getElementById("ques-view").innerHTML+="<div class='ques-circle correct'>"+(countQues+1)+"</div>";
            
     }else{
     
-        score-=0.33;
-        document.getElementById("score").textContent="Nota : "+score;
+        score-=0.3333;
+        document.getElementById("score").textContent="Nota : "+score.toFixed(2);
         document.getElementById("ques-view").innerHTML+="<div class='ques-circle incorrect'>"+(countQues+1)+"</div>";
     };
     
@@ -1620,12 +1659,12 @@ document.querySelector(".submit-answer").addEventListener("click",function(){
     }
     
     document.getElementById("ques-left").textContent="Pregunta : "+(countQues+1)+"/"+window[lang].length;
-    document.querySelector(".question").innerHTML="<h1>"+window[lang][countQues].question+"</h1>";
+    document.querySelector(".question").innerHTML="<h1 id=\"enunciat\">"+window[lang][countQues].question+"</h1>";
     for (i=0;i<=3;i++){                     
         document.getElementById("opt"+i).value=window[lang][countQues].choices[i];
         document.getElementById("lb"+i).innerHTML=window[lang][countQues].choices[i];
         
-    };/*For loop Closed*/
+    };
 
 });
 
@@ -1639,7 +1678,7 @@ document.querySelector(".view-results").addEventListener("click",function(){
     
     document.querySelector(".right-wrong").innerHTML="Preguntes encertades: "+correct;
     
-    document.getElementById("display-final-score").innerHTML="Nota: "+score;
+    document.getElementById("display-final-score").innerHTML="Nota: "+score.toFixed(2);
     
     if (score>8.5){
         document.querySelector(".remark").innerHTML="Vamos! Pràcticament dins sa lancha!";
