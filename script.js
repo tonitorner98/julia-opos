@@ -1678,7 +1678,7 @@ document.querySelector(".view-results").addEventListener("click",function(){
     
     document.querySelector(".right-wrong").innerHTML="Preguntes encertades: "+correct;
     
-    document.getElementById("display-final-score").innerHTML="Nota: "+score.toFixed(2);
+    document.getElementById("display-final-score").innerHTML="Nota: "+(score*10/(countQues+1)).toFixed(2);
     
     if (score>8.5){
         document.querySelector(".remark").innerHTML="Vamos! Pràcticament dins sa lancha!";
