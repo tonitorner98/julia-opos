@@ -1633,7 +1633,7 @@ document.querySelector("#startQuizbutton").addEventListener("click",function(){
 
 
 
-document.querySelector(".submit-answer").addEventListener("click",function(){
+document.getElementById("seguentPregunta").addEventListener("click",function(){
     //alert(window[lang][countQues].choices[window[lang][countQues].answer]);
     //alert(document.querySelector('input[name="options"]:checked').value);
 
@@ -1653,20 +1653,33 @@ document.querySelector(".submit-answer").addEventListener("click",function(){
     if (countQues<window[lang].length-1){
         countQues++;
     }else{
-        document.querySelector(".submit-answer").style.display="none";
+        document.getElementById("seguentPregunta").style.display="none";
+        document.getElementById("veureRespostes").style.display="none";
         document.querySelector(".view-results").style.display="unset";
-
+        return;
     }
     
     document.getElementById("ques-left").textContent="Pregunta : "+(countQues+1)+"/"+window[lang].length;
     document.querySelector(".question").innerHTML="<h1 id=\"enunciat\">"+window[lang][countQues].question+"</h1>";
     for (i=0;i<=3;i++){                     
         document.getElementById("opt"+i).value=window[lang][countQues].choices[i];
+        document.getElementById("opt"+i).removeAttribute("disabled");
         document.getElementById("lb"+i).innerHTML=window[lang][countQues].choices[i];
+        document.getElementById("lb"+i).style="";
         
     };
 
 });
+
+document.getElementById("veureRespostes").addEventListener("click", function() {
+    for (t=0;t<=3;t++){
+        document.getElementById("opt"+t).setAttribute("disabled", true);
+    };
+    document.getElementById("lb"+window[lang][countQues].answer).style = "color: #23802b; font-weight: bold";
+
+
+});
+
 
 document.querySelector(".view-results").addEventListener("click",function(){
     
